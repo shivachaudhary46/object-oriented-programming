@@ -1,23 +1,24 @@
-```markdown
 # Basics of C++ Programming  
 
-## 1. Introduction  
+## Introduction  
 - C++ is a **general-purpose, compiled, case-sensitive** programming language.  
 - Developed by **Bjarne Stroustrup** in **1979 at Bell Labs**.  
 - Supports **procedural, object-oriented, and generic programming**.  
 
-## 2. Why C++?  
+## Why C++?  
 - Combines **efficiency** of C with **object-oriented features**.  
-- Used in **game development, system software, and embedded systems**.  
+- Used in **game development, system software, and embedded systems**. 
+- Used to develop high performance system software such as **Mysql, Windows XP, Adobe products**
 
-## 3. Differences Between C and C++  
+## Differences Between C and C++  
 | Feature | C | C++ |  
 |---------|----|----|  
-| Programming Paradigm | Procedural | Procedural + OOP |  
+| Programming Paradigm | Procedural programming | Procedural programming + OOP |  
 | Code Reusability | Low | High (Classes, Inheritance) |  
 | Memory Management | Manual | Supports RAII |  
+| compilation | faster | slower |
 
-## 4. Basic Structure of a C++ Program  
+## My first c++ program
 ```cpp
 #include <iostream>  
 using namespace std;  
@@ -27,28 +28,22 @@ int main() {
 }
 ```
 
-## 5. Character Set and Tokens  
-- **Tokens:** Smallest unit of a program:  
-  - **Keywords** (int, return, class)  
-  - **Identifiers** (variable and function names)  
-  - **Constants, Operators, Special Symbols**  
-
-## 6. Data Types in C++  
+## Data Types in C++  
 - **Primitive Types:** int, char, float, double, bool  
 - **Derived Types:** Arrays, Pointers, Functions  
 - **User-defined Types:** Structures, Classes, Enums  
 
-## 7. Variables and Constants  
+## Variables and Constants  
 - **Variables:** Store data of specific types.  
   ```cpp
   int age = 25;
   ```  
-- **Constants:** Immutable values.  
+- **Constants:** Immutable values which cannot be changed 
   ```cpp
   const float PI = 3.14;
   ```  
 
-## 8. Operators in C++  
+## Operators in C++  
 | Type | Example | Description |  
 |------|---------|------------|  
 | Arithmetic | `+`, `-`, `*`, `/`, `%` | Basic Math |  
@@ -57,7 +52,7 @@ int main() {
 | Assignment | `=`, `+=`, `-=` | Assign values |  
 | Bitwise | `&`, `|`, `^` | Manipulate bits |  
 
-## 9. Input and Output in C++  
+## Input and Output in C++  
 - Uses **cin** (input) and **cout** (output).  
 ```cpp
 int age;  
@@ -65,8 +60,26 @@ cout << "Enter age: ";
 cin >> age;  
 cout << "You entered: " << age;
 ```
+- Another example:
+```cpp
+#include<iostream>
+using namespace std;
+int main(){
+    int a, b, c;
 
-## 10. Control Statements  
+    cout << "enter two integers :";
+    cin >> a >> b;
+
+    //sum the two value and stored in variable
+    c = a + b;
+
+    cout << a << " + " << b << " = " <<c<<endl;
+
+    return 0;
+}
+```
+
+## Control Statements  
 ### a) If-Else Statement  
 ```cpp
 if (x > 0) cout << "Positive";  
