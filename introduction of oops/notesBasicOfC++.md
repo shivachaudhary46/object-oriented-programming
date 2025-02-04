@@ -61,11 +61,11 @@ return 0;                   //send 0 to operating system
     normal identifier names
 - Following table list are the c++ keywords:
 
-| keywords |                                 | Newer Keywords |
+| keywords |    |    |    |     |     |     | Newer Keywords |
 |---------|----|----|----|----|----|----|-------------|
 | asm | continue | float | new | signed | try | using |
 | auto | default | for | operator | sizeof | typedef | namespace |
-| break | delete | Friend | private | static | union | bal |
+| break | delete | Friend | private | static | union | bal　|
 | case | do | goto | protected | struct | unsigned | static_cast |
 | catch | double | if | public | switch | virtual | const_cast |
 | char | else | inline | register | template | void | dynamic_cast |
