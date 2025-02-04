@@ -2,21 +2,23 @@
 
 ## Introduction  
 - C++ is a **general-purpose, compiled, case-sensitive** programming language.  
-- Developed by **Bjarne Stroustrup** in **1979 at Bell Labs**.  
-- Supports **procedural, object-oriented, and generic programming**.  
+- It was Developed by **Bjarne Stroustrup** in **1979 at Bell Labs**.  
+- It also Supports **procedural, object-oriented, and generic programming**.  
 
-## Why C++?  
+## Uses C++?  
 - Combines **efficiency** of C with **object-oriented features**.  
 - Used in **game development, system software, and embedded systems**. 
 - Used to develop high performance system software such as **Mysql, Windows XP, Adobe products**
+- Used to write applications in sensitive sectors such as **banking, military**.
 
 ## Differences Between C and C++  
 | Feature | C | C++ |  
 |---------|----|----|  
 | Programming Paradigm | Procedural programming | Procedural programming + OOP |  
-| Code Reusability | Low | High (Classes, Inheritance) |  
+| Code Reusability | Low | High due to(Classes, Inheritance) |  
 | Memory Management | Manual | Supports RAII |  
 | compilation | faster | slower |
+| libraries | fewer libraries and keywords than c++ | improved and extendeed libraries |
 
 ## My first c++ program
 ```cpp
@@ -28,10 +30,47 @@ int main() {
 }
 ```
 
-## Data Types in C++  
+## C++ Program Structure
+```cpp
+// first cpp program   //comment 
+#include<iostream>      //preprocessor directive
+using namespace std;     //which namespace
+int main()              // beginning of function named main
+{                       //begining pf block for main
+cout << "Hello World!";     //ouput statement and string literal
+return 0;                   //send 0 to operating system
+}
+```
+
+## Data Types   
 - **Primitive Types:** int, char, float, double, bool  
 - **Derived Types:** Arrays, Pointers, Functions  
 - **User-defined Types:** Structures, Classes, Enums  
+
+## Tokens
+- The smallest individual unit iin program is known as Tokens.
+- c++ has the following tokens:
+    * Keywords
+    * Identifiers
+    * Constants
+    * Operators
+    * Special symbols
+  
+### 1. Keywords
+- Keywords are the reserved words for special purpose and must not be Used as 
+    normal identifier names
+- Following table list are the c++ keywords:
+
+| keywords |                                 | Newer Keywords |
+|---------|----|----|----|----|----|----|-------------|
+| asm | continue | float | new | signed | try | using |
+| auto | default | for | operator | sizeof | typedef | namespace |
+| break | delete | Friend | private | static | union | bal |
+| case | do | goto | protected | struct | unsigned | static_cast |
+| catch | double | if | public | switch | virtual | const_cast |
+| char | else | inline | register | template | void | dynamic_cast |
+| class | enum | int | return | this | volatile | true |
+| const | extern | long | short | throw | while | false |
 
 ## Variables and Constants  
 - **Variables:** Store data of specific types.  
